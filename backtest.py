@@ -118,7 +118,7 @@ def objective(trial):
 
 
 if __name__ == "__main__":
-    data_file = "btc_15min_data.csv"
+    data_file = "data/btc_15min_data.csv"
     df = pd.read_csv(data_file, parse_dates=["Open Time"])
 
     # Clean column headers and ensure 'Close' is numeric.
