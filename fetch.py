@@ -15,7 +15,7 @@ BINANCE_API_SECRET = "YOUR_API_SECRET"
 def fetch_binance_data(
         symbol="BTCUSDT",
         interval=Client.KLINE_INTERVAL_15MINUTE,
-        start_date="1 Jan 2021",
+        start_date="1 Jan 2024",
         end_date=None,
         save_csv=True,
         csv_filename="btc_15min_data.csv"
@@ -104,7 +104,7 @@ if __name__ == "__main__":
     df_data = fetch_binance_data(
         symbol="BTCUSDT",
         interval=Client.KLINE_INTERVAL_15MINUTE,
-        start_date="1 Jan 2021",  # start of data
+        start_date="1 Jan 2024",  # start of data
         end_date=None,  # fetch up to latest
         save_csv=True,
         csv_filename="btc_15min_data.csv"
